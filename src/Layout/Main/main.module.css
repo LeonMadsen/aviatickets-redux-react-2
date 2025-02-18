@@ -1,0 +1,175 @@
+.block_main {
+    display: flex;
+    margin-top: 20px;
+    margin-left: 276px;
+    max-height: 2700px;
+    border-radius: 10px;
+}
+
+.block_filters {
+    display: flex;
+    flex-direction: column;
+    width: 272px;
+    height: auto; 
+    gap: 20px; 
+}
+
+.block_info {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch; 
+    width: 777px;
+    max-height: 2700px;
+    border-radius: 10px;
+}
+
+.block_info__navigation {
+    width: 727px;
+    height: 550px;
+}
+
+.block_info__tickets {
+    display: flex;
+    flex-direction: column;
+    row-gap: 45px;
+    width: 727px;
+    min-height: 616px; 
+    max-height: 2616px;
+    margin-top: 29px;
+    border-radius: 10px;
+}
+
+.menuApearHeader {
+    display: none;
+}
+
+.menuApearFilter {
+    display: none;
+}
+
+@media (min-width: 430px) and (max-width: 768px) {
+    .block_filters {
+        display: none;
+    }
+
+    .block_main {
+        margin-left: 0px;
+        width: 727px;
+    }
+
+    .block_info {
+        margin-left: 0px;
+    }
+
+    .menuApearHeader {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-top: 10px;
+        width: 727px;
+        height: 38px;
+        background-color: #4E148C;
+        border-radius: 10px;
+    }
+
+    .menuApearHeaderWithBottom {
+        display: flex;
+        justify-content: space-between;
+        width: 727px;
+        height: 38px;
+        flex-wrap: wrap;
+        margin-top: 10px;
+        margin-bottom: 250px;
+        background-color: #4E148C;
+        border-radius: 10px;
+    }
+
+    .menuApear_title {
+        padding: 5px 0px 0px 23px;
+        margin: 0px;
+        font-weight: 500;
+        font-size: 16px;
+        color: #F7F9F7;
+    }
+
+    .menuApear_titleAction {
+        padding: 5px 0px 0px 90px;
+        margin: 0px;
+        font-weight: 500;
+        font-size: 16px;
+        color: #F7F9F7;
+    }
+
+    .menuApearFilter {
+        display: flex;
+        width: 727px;
+        height: 223px;
+        border-radius: 10px;
+    }
+}
+
+@media (max-width: 429px) {
+
+    .block_filters {
+        display: none;
+    }
+   
+    .menuApearFilter {
+        display: flex;
+        width: 400px;
+        height: 223px;
+    }
+
+    .block_main {
+        margin-left: 0px;
+        width: 400px;
+    }
+
+    .block_info {
+        margin-left: 0px;
+    }
+
+    .block_info__navigation {
+        width: 400px;
+        height: 42px;
+    }
+
+    .block_info__tickets {
+        width: 400px;
+    }
+
+    .menuApearHeader {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-top: 10px;
+        width: 400px;
+        height: 38px;
+        background-color: #4E148C;
+        border-radius: 10px;
+    }
+
+    .menuApearHeaderWithBottom {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-top: 10px;
+        margin-bottom: 250px;
+        width: 400px;
+        height: 38px;
+        background-color: #4d108e;
+        border-radius: 10px;
+    }
+    
+    .menuApear_title {
+        padding: 11px 0px 0px 18px;
+        margin: 0px;
+        font-weight: 500;
+        font-size: 10px;
+        color: #F7F9F7;
+    }
+
+    .menuApear_titleAction {
+       display: none;
+    }
+}

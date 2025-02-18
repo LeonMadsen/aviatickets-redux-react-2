@@ -1,0 +1,41 @@
+.header {
+    display: flex;
+    margin-top: 84px;
+    margin-left: 276px;
+    width: 1049px;
+    height: 80px;
+}
+
+.headertext {
+    margin-top: 26px;
+    margin-left: 34px;
+    font-weight: 700;
+    font-size: 24px;
+    color: #4E148C; 
+}
+
+@media (min-width: 430px) and (max-width: 768px) {
+    .header {
+        display: flex;
+        justify-content: center;
+        width: 727px;
+        margin: 30px 0px 0px 0px;
+    }
+
+    .header_text {
+        display: none;
+    }   
+}
+
+@media (max-width: 429px) {
+    .header {
+        display: flex;
+        justify-content: center;
+        width: 400px;
+        margin: 30px 0px 0px 0px;
+    }
+    
+    .header_text {
+        display: none;
+    }  
+}

@@ -1,0 +1,14 @@
+{
+  "name": "server-ticket",
+  "version": "1.0.0",
+  "description": "server API aviaticket",
+  "main": "index.js",
+  "scripts": {
+    "start": "json-server --watch tickets.json --port 4000"
+  },
+  "author": "LeonMadsen",
+  "license": "ISC",
+  "dependencies": {
+    "json-server": "^1.0.0-beta.3"
+  }
+}

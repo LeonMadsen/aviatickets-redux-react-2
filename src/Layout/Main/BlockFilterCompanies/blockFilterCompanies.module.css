@@ -1,0 +1,139 @@
+
+.blockFilterCompanies {
+    margin-top: 47px;
+    width: 272px;
+    border-radius: 10px;
+    background-color: #E8EBF2;
+    min-height: 198px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.titleFilter {
+    margin: 0px 0px 3px 0px;
+    padding: 12px 0px 0px 19px;
+    font-weight: 700;
+    font-size: 20px;
+    color: #4E148C;
+}
+
+.positionRadiobutton {
+    display: flex;
+    flex-direction: column;
+}
+.label {
+    position: relative;
+    margin: 16px 0px 0px 46px;
+    font-weight: 500;
+    font-size: 16px;
+    color:  #858AE3;
+   
+    }
+   
+
+.label > input {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+.label > span {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+    font-weight: 500;
+    font-size: 16px;
+    color: #858AE3;
+}
+
+.label > span::before {
+    content: '';
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 1px solid #4E148C;
+    border-radius: 50%;
+    margin-right: 18px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% 100%;
+    cursor: pointer;
+}
+
+.label > input:checked + span::before {
+    border-color: #4E148C;
+    background-color: #4E148C; /* Фон кнопки теперь тоже фиолетовый */
+    background-image: none; /* Убираем точку внутри */
+}
+
+@media (min-width: 430px) and (max-width: 768px) {
+    .blockFilterCompanies {
+        margin-top: 0px;
+        width: 200px;
+        height: 223px;
+        background-color: #4E148C;;
+        border-radius: 0px 0px 0px 10px;
+    }
+
+    .label {
+        margin: 10px 0px 0px 23px;
+  }
+
+    .titleFilter {
+        padding: 12px 0px 0px 23px;
+        margin: 0px;
+        color: white;
+    }
+
+    .label > span {
+        color: white;
+    }
+
+    .label > span::before {
+        border: 1px solid white;
+    }
+
+    .label > input:checked + span::before {
+        border-color :#4E148C;
+        background-color:  #4E148C;
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='white'/%3e%3c/svg%3e");
+    }
+}  
+
+@media (max-width: 429px) {
+    .blockFilterCompanies {
+      margin-top: 0px;
+      width: 200px;
+      height: 223px;
+      background-color: #4E148C;;
+      border-radius: 0px 0px 0px 10px;
+} 
+
+.label {
+    margin: 10px 0px 0px 20px;
+}
+
+.titleFilter {
+    padding: 12px 0px 0px 20px;
+    margin: 0px;
+    color: white;
+}
+
+.label > span {
+    color: white;
+}
+
+.label > span::before {
+    border: 1px solid white;
+}
+
+.label > input:checked + span::before {
+    border-color:#4E148C;
+    background-color: #4E148C;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='white'/%3e%3c/svg%3e");
+}
+}
